@@ -4,16 +4,16 @@ import './App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
-  BrowserRouter,
+  BrowserRouter,HashRouter
  
 } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter basename='/'>
     <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
